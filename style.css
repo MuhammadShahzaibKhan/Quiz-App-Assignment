@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "lato";
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1e88e5;
+}
+
+.welcome-txt{
+    width: 400px;
+}
+
+.quiz-page{
+    text-decoration: none;
+}
+
+.welcome-form input, .welcome-form button{
+    display: block;
+    width: 100%;
+}
+
+.welcome-form input{
+    margin: 0px 0px 15px 0px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.welcome-form button{
+    padding: 20px 0px;
+    font-size: 22px;
+    border: none;
+    border-radius: 100px;
+    background-color: white;
+    color: #1e88e5;
+    transition: 0.4s all;
+}
+
+.welcome-form button:hover{
+    transform:  translateY(-5px);
+    cursor: pointer;
+}
+
+.welcome-form input:focus, .welcome-form button:focus{
+    outline: none;
+}
+
+
+
+
+/* Quiz Page Styling */
+
+
+.quiz{
+   display: grid;
+   grid-template-rows: 60px;
+   border-radius: 3px;
+    width: 800px;
+    height: 500px;
+    background-color: white;
+}
+
+.quiz-header{
+    background-color: white;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.quiz-body{
+    background-color: rgb(224, 222, 222);
+    padding: 30px;
+}
+
+.quiz-user{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+}
+
+.option-group{
+    list-style: none;
+    margin: 30px 0;
+}
+
+.option{
+    background-color: white;
+    width: 300px;
+    padding: 15px 20px;
+    margin: 0px 0px 15px 0px;
+    border-radius: 100px;
+    border: 2px solid transparent;
+}
+
+.option:hover{
+    cursor: pointer;
+    border: 2px solid #1e88e5;
+    color: #1e88e5;
+}
+
+.btn-nxt{
+    background-color: #1e88e5;
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 25px;
+    transition: 0.4s all;
+}
+
+.btn-nxt:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #1e88e5;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-nxt:focus{
+    outline: none;
+}
+
+.active{
+    background-color: #1e88e5;
+    color: white !important;
+}
+
+.trophy-icon{
+    font-size: 300px;
+    color: white;
+}
+
+.user-name, .user-score{
+    color: white;
+    text-align: center;
+    margin: 15px 0px 0px 0px;
+    font-size: 30px;
+}
